@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/searchClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:layout_alignParentTop="true"     
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Class Abbreviation" />
+
+    <EditText
+        android:id="@+id/searchNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/searchClass"
+        android:layout_alignRight="@+id/searchClass"
+        android:layout_below="@+id/searchClass"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:hint="Class Number"
+        android:inputType="number">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/searchclasscearch"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:text="@string/search" />
+
+    <TextView
+        
+        android:id="@+id/serachclass_tryagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchclasscearch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

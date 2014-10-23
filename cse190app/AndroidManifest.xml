@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myfirstapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="16" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".Main"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.myfirstapp.STARTINGPOINT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".Menu"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.myfirstapp.MENU" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".TextPlay"
+            android:label="Play_with_text" >
+        </activity>
+        
+                <activity
+            android:name=".Email"
+            android:label="Hate_Mailer" >
+        </activity>
+
+        <activity
+            android:name=".Camera"
+            android:label="Camera_Application"
+            android:screenOrientation="portrait"
+             >
+        </activity>
+        
+        <activity
+            android:name=".Data"
+            android:label="Data"
+             >
+        </activity>
+        
+        <activity
+            android:name=".OpenedClass"
+            android:label="OpenedClass"
+             >
+        </activity>
+        
+    </application>
+
+</manifest>

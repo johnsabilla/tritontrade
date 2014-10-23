@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/creatrating_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/createrating_sellerName"
+        android:layout_marginTop="64dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="@string/Comment"
+        android:lines="10" >
+
+
+        <requestFocus />
+    </EditText>
+
+    <RatingBar
+        android:id="@+id/createRating"
+        style="@style/starRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_below="@+id/createrating_sellerName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp" />
+
+    <TextView
+        android:id="@+id/createrating_sellerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="@string/username"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/creatingrating_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/creatingrating_submit"
+        android:layout_alignBottom="@+id/creatingrating_submit"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="60dp"
+        android:text="@string/back" />
+
+    <Button
+        android:id="@+id/creatingrating_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="52dp"
+        android:layout_toRightOf="@+id/creatingrating_back"
+        android:text="@string/submit" />
+
+</RelativeLayout>

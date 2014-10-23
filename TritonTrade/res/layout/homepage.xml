@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="a1513659633b2c0"
+        ads:loadAdOnCreate="true"
+        ads:testDevices="TEST_EMULATOR, 015d2578a44ff80a" />
+
+
+    <Button
+        android:id="@+id/homepageButtonLogout"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Log Out" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="317dp"
+        android:layout_above="@+id/homepageButtonLogout"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:paddingLeft="10dp" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/homepageButtonBuy"
+        android:layout_centerHorizontal="true"
+        android:text="Account History"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/homepageButtonSell"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/adView"
+        android:text="Sell" />
+
+    <Button
+        android:id="@+id/homepageButtonBuy"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/homepageButtonSell"
+        android:layout_alignBottom="@+id/homepageButtonSell"
+        android:layout_alignParentRight="true"
+        android:text="Buy" />
+
+</RelativeLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tritontrade"
+    
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" 
+        android:theme="@style/Holo.Theme">
+       
+        <activity
+            android:screenOrientation="portrait"
+            android:name="com.example.tritontrade.Main"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".BookContents"
+            android:label="BookContents"
+         >
+        </activity>
+        
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".BookInfo"
+            android:label="BookInfo"
+         >
+        </activity>
+        
+     <activity
+             android:name="com.google.ads.AdActivity"
+             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" >
+       </activity>>
+        
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".UserLogin"
+            android:label="UserLogin"
+         >
+        </activity>
+            
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".BookInfoPage"
+            android:label="BookInfoPage"
+         >
+        </activity>
+        
+         <activity
+            android:screenOrientation="portrait"
+            android:name=".Books"
+            android:label="Books"
+         >
+        </activity>
+        
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".CreateRating"
+            android:label="CreateRating"
+         >
+        </activity>
+        
+         <activity
+            android:screenOrientation="portrait"
+            android:name=".Buy"
+            android:label="Buy"
+         >
+        </activity>
+        
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Edit"
+            android:label="Edit"
+         >
+        </activity>
+        
+         <activity
+            android:screenOrientation="portrait"
+            android:name=".EnterClass"
+            android:label="EnterClass"
+         >
+        </activity>
+        
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".RateMe"
+            android:label="RateMe"
+         >
+        </activity>
+        
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Register"
+            android:label="Register"
+         >
+        </activity>
+        
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Sell"
+            android:label="Sell"
+         >
+         </activity>
+         
+         <activity
+            android:screenOrientation="portrait"
+            android:name=".BarcodeScanner"
+            android:label="BarcodeScanner"
+         >   
+        </activity>
+                
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".SearchClass"
+            android:label="SearchClass"
+         >
+        </activity>
+        
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Homepage"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.tritontrade.Homepage" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+       
+        
+    </application>
+
+</manifest>

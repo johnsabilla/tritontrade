@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/infobookname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textSize="20dip"
+                android:hint="bookname" >
+            
+            </TextView>
+
+            <TextView
+                android:id="@+id/infobookseller"
+                android:layout_width="106dp"
+                android:layout_height="wrap_content"
+                android:textSize="15dip"
+                android:layout_gravity="left"
+                android:hint="seller" />
+
+            <RatingBar
+                android:id="@+id/infobooksellerrating"
+                style="@style/starRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:layout_height="34dp"
+                android:layout_marginTop="20dp" />
+            
+            <TextView
+                android:id="@+id/infobookprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="price" >
+            
+            </TextView>
+            <TextView
+                android:id="@+id/infobookcondition"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="condition" >
+
+            </TextView>
+            <TextView
+                android:id="@+id/infobookdescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="description" >
+ 
+            </TextView>
+
+            <Button
+                android:id="@+id/infobookbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Notify the Seller?" />
+    
+        <TextView
+        android:id="@+id/bookinfo_current_user"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+        <TextView
+        android:id="@+id/bookinfo_current_user_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+        <TextView
+        android:id="@+id/bookinfo_seller_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+        <Button
+            android:id="@+id/ButtonBookInfoStatusChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.94"
+            android:text="Change to Sold" />
+
+        <Button
+            android:id="@+id/bookinfo_edit"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:text="Edit" />
+
+        <Button
+            android:id="@+id/bookinfo_delete"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:text="Delete" />
+
+</LinearLayout>

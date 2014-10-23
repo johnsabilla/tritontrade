@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/edit_Bookname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="18dp"
+        android:ems="14"
+        android:hint="Book Name"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edit_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/edit_Bookname"
+        android:layout_below="@+id/edit_Bookname"
+        android:layout_marginTop="20dp"
+        android:ems="4"
+        android:hint="Price"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/edit_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/edit_price"
+        android:layout_alignLeft="@+id/edit_Bookname"
+        android:layout_alignTop="@+id/edit_price"
+        android:layout_toLeftOf="@+id/edit_price"
+        android:entries="@array/book_condit"
+        android:inputType="textPersonName"
+        android:focusable="false"
+        android:prompt="@string/Condit" />
+
+    <EditText
+        android:id="@+id/edit_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_sellButtonSubmit"
+        android:layout_alignLeft="@+id/edit_condition"
+        android:layout_alignRight="@+id/edit_price"
+        android:layout_below="@+id/edit_class_num"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edit_class_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_price"
+        android:layout_alignRight="@+id/edit_price"
+        android:layout_below="@+id/edit_price"
+        android:ems="10"
+        android:hint="###"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edit_class_abb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/edit_class_num"
+        android:layout_alignBottom="@+id/edit_class_num"
+        android:layout_alignLeft="@+id/edit_condition"
+        android:layout_alignRight="@+id/edit_condition"
+        android:ems="10"
+        android:hint="Class Abbreviation"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/edit_sellButtonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edit_description"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/edit_description"
+        android:text="Submit" />
+                
+        >
+        
+</RelativeLayout>

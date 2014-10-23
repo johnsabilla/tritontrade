@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/triton"
+    tools:context=".LogIn" >
+
+    <Button
+        android:id="@+id/loginButtonRegister"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="53dp"
+        android:layout_marginRight="18dp"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/loginButtonLogin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/loginButtonRegister"
+        android:layout_alignBottom="@+id/loginButtonRegister"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp"
+        android:text="Log in" />
+
+</RelativeLayout>
